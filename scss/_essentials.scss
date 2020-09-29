@@ -8,7 +8,38 @@ $black: #000000;
 
 // FONT
 
-$PrimaryFont: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+$primaryFont: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+$secondaryFont: Arial, Helvetica, sans-serif;
+
+
+// Media Queries
+
+$mobile: 705px;
+$tablets: 768px;
+$desktop: 992px;
+$largedesktops: 1200px;
+
+// Buttons
+
+@mixin button1 {
+    border-radius: 37px;
+    color: $white;
+    font-family: $PrimaryFont;
+    display: inline-block;
+    cursor: pointer;
+    background-color: $leafgreen;
+    font-size: 20px;
+}
+
+@mixin button2{
+    border-radius: 37px;
+    color: $leafgreen;
+    font-family: $PrimaryFont;
+    display: inline-block;
+    cursor: pointer;
+    background-color: $white;
+    font-size: 20px;
+}
 
 
 

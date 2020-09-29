@@ -1,0 +1,61 @@
+@import "_essentials";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $primaryFont;
+    list-style: none;
+}
+
+header{
+   background-color: $white;
+
+   .bars{
+       font-size: 1.25rem;
+   }
+}
+
+.navbar{
+    width: 80%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 0.50rem;
+
+    .logo{
+        text-align: center;
+        h2{
+            color: $leafgreen;
+        }
+    }
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 2.813rem;
+        li{
+            font-weight: bold;
+        }
+    }
+}
+
+
+@media (max-width: $mobile){
+    ul li{
+        display: none;
+    }
+
+    
+}
+
+
+
+
+
+
+

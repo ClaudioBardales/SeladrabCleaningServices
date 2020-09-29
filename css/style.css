@@ -1,1 +1,50 @@
-/* No CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  list-style: none;
+}
+
+header {
+  background-color: white;
+}
+
+header .bars {
+  font-size: 1.25rem;
+}
+
+.navbar {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 0.50rem;
+}
+
+.navbar .logo {
+  text-align: center;
+}
+
+.navbar .logo h2 {
+  color: #63c572;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 2.813rem;
+}
+
+.navbar ul li {
+  font-weight: bold;
+}
+
+@media (max-width: 705px) {
+  ul li {
+    display: none;
+  }
+}
