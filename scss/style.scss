@@ -14,6 +14,7 @@ header{
 
    .bars{
        font-size: 1.25rem;
+       display: none;
    }
 }
 
@@ -45,12 +46,21 @@ header{
 }
 
 
-@media (max-width: $mobile){
-    ul li{
-        display: none;
+@media only screen and (max-width: $mobile){
+     header .bars{
+        display: block;
     }
 
-    
+   .navbar {
+       flex-direction: column;
+        ul {
+        gap: 1.4065rem;
+        text-align: center;
+        flex-direction: column;
+    }
+
+   }
+       
 }
 
 

@@ -12,6 +12,7 @@ header {
 
 header .bars {
   font-size: 1.25rem;
+  display: none;
 }
 
 .navbar {
@@ -43,8 +44,16 @@ header .bars {
   font-weight: bold;
 }
 
-@media (max-width: 705px) {
-  ul li {
-    display: none;
+@media only screen and (max-width: 705px) {
+  header .bars {
+    display: block;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar ul {
+    gap: 1.4065rem;
+    text-align: center;
+    flex-direction: column;
   }
 }
