@@ -10,13 +10,8 @@ header {
   background-color: white;
 }
 
-header .bars {
-  font-size: 1.25rem;
-  display: none;
-}
-
 .navbar {
-  width: 80%;
+  width: 90%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -44,14 +39,34 @@ header .bars {
   font-weight: bold;
 }
 
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-link {
+  font-size: 1.25rem;
+  display: none;
+}
+
+.navbar-link-toggle {
+  display: none;
+}
+
 @media only screen and (max-width: 705px) {
-  header .bars {
+  .navbar .navbar-link {
     display: block;
   }
-  .navbar {
+  .nav-items {
+    display: none;
+  }
+  .navbar-ToggleShow {
+    display: flex;
+  }
+  .navbar-link-toggle {
     flex-direction: column;
   }
-  .navbar ul {
+  .navbar-link-toggle ul {
     gap: 1.4065rem;
     text-align: center;
     flex-direction: column;
