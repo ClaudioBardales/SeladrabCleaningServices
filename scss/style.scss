@@ -11,15 +11,10 @@
 
 header{
    background-color: $white;
-
-   .bars{
-       font-size: 1.25rem;
-       display: none;
-   }
 }
 
 .navbar{
-    width: 80%;
+    width: 90%;
     margin:auto;
     display: flex;
     justify-content: space-between;
@@ -41,27 +36,51 @@ header{
         gap: 2.813rem;
         li{
             font-weight: bold;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            
         }
     }
 }
 
+.navbar-link{
+    font-size: 1.25rem;
+       display: none;
+}
+
+.navbar-link-toggle{
+    display: none;
+}
+
 
 @media only screen and (max-width: $mobile){
-     header .bars{
-        display: block;
+      .navbar .navbar-link{
+       display: block;
     }
 
-   .navbar {
-       flex-direction: column;
+   .nav-items {
+       display: none;
+    }
+
+    .navbar-ToggleShow{
+        display: flex;
+    }
+
+    .navbar-link-toggle{
+        flex-direction: column;
         ul {
         gap: 1.4065rem;
         text-align: center;
-        flex-direction: column;
+        flex-direction: column; 
     }
 
    }
-       
 }
+
+   
+       
 
 
 
