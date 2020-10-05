@@ -1,3 +1,4 @@
+// Navigation Bar Functionality
 const classToggle = () => {
     const navs = document.querySelectorAll('.nav-items')
 

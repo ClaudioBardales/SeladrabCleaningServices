@@ -17,7 +17,7 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  padding: 0.50rem;
+  padding: 0.5rem;
 }
 
 .navbar .logo {
@@ -54,6 +54,9 @@ header {
 }
 
 @media only screen and (max-width: 705px) {
+  .navbar {
+    flex-direction: row;
+  }
   .navbar .navbar-link {
     display: block;
   }
@@ -63,10 +66,7 @@ header {
   .navbar-ToggleShow {
     display: flex;
   }
-  .navbar-link-toggle {
-    flex-direction: column;
-  }
-  .navbar-link-toggle ul {
+  .navbar-ToggleShow ul {
     gap: 1.4065rem;
     text-align: center;
     flex-direction: column;
