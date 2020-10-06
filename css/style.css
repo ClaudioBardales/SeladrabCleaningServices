@@ -6,7 +6,9 @@
   list-style: none;
 }
 
+
 /*NAV BAR */
+
 header {
   background-color: white;
 }
@@ -18,6 +20,7 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+
   padding: 0.5rem;
 }
 
@@ -131,6 +134,8 @@ header {
   .navbar {
     flex-direction: row;
   }
+@media only screen and (max-width: 705px) {
+
   .navbar .navbar-link {
     display: block;
   }
@@ -140,6 +145,7 @@ header {
   .navbar-ToggleShow {
     display: flex;
   }
+
   .navbar-ToggleShow ul {
     gap: 1.4065rem;
     text-align: center;
@@ -151,5 +157,12 @@ header {
   }
   .hero-section p {
     text-align: center;
+  .navbar-link-toggle {
+    flex-direction: column;
+  }
+  .navbar-link-toggle ul {
+    gap: 1.4065rem;
+    text-align: center;
+    flex-direction: column;
   }
 }

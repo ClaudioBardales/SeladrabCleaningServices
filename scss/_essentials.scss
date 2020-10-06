@@ -24,6 +24,7 @@ $largedesktops: 1200px;
 @mixin button1 {
     border-radius: 37px;
     color: $white;
+
     font-family: $primaryFont;
     display: inline-block;
     cursor: pointer;
