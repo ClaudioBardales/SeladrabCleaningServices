@@ -1,3 +1,144 @@
+
+@import '_essentials';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $primaryFont;
+  list-style: none;
+}
+
+/*NAV BAR */
+
+header {
+  background-color: $white;
+}
+
+.navbar {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 0.5rem;
+
+  .logo {
+    text-align: center;
+    h2 {
+      color: $leafgreen;
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 2.813rem;
+    li {
+      font-weight: bold;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+}
+
+.navbar-link {
+  font-size: 1.25rem;
+  display: none;
+}
+
+.navbar-link-toggle {
+  display: none;
+}
+
+.hero-section{
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url('../img/mop.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.25;
+  }
+  h1{
+    position: relative;
+    color: $white;
+    font-size: 2rem;
+    span{
+      color: $leafgreen;
+    }
+  }
+  p{
+    position: relative;
+    margin: 2rem;
+    color: $white;
+    font-weight: bold;
+  }
+
+  .btn{
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    a:nth-child(1){
+      @include button1;
+    }
+    a:nth-child(2){
+      @include button2;
+    }
+  }
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: $mobile) {
+  .navbar{
+    flex-direction: row;
+    .navbar-link {
+      display: block;
+    }
+  }
+
+  .nav-items {
+    display: none;
+  } 
+
+  .navbar-ToggleShow {
+    display: flex;
+    ul {
+      gap: 1.4065rem;
+      text-align: center;
+      flex-direction: column;
+    }
+  }
+
+  .hero-section h1{
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .hero-section p{
+    text-align: center;
+  }
 @import "_essentials";
 
 
@@ -79,12 +220,5 @@ header{
    }
 }
 
-   
-       
-
-
-
-
-
-
+}
 
