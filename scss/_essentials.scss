@@ -1,0 +1,51 @@
+// COLORS
+
+$leafgreen: #63c572;
+$grey: #44444a;
+$white: white;
+$lightgrey: #F1F1F1;
+$black: #000000;
+
+// FONT
+
+$primaryFont: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+$secondaryFont: Arial, Helvetica, sans-serif;
+
+
+// Media Queries
+
+$mobile: 705px;
+$tablets: 768px;
+$desktop: 992px;
+$largedesktops: 1200px;
+
+// Buttons
+
+@mixin button1 {
+    border-radius: 37px;
+    color: $white;
+    font-family: $primaryFont;
+    display: inline-block;
+    cursor: pointer;
+    background-color: $leafgreen;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0.50rem;
+    font-weight: bold;
+}
+
+@mixin button2{
+    border-radius: 37px;
+    color: $leafgreen;
+    font-family: $primaryFont;
+    display: inline-block;
+    cursor: pointer;
+    background-color: $white;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0.50rem;
+    font-weight: bold;
+}
+
+
+
