@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  list-style: none;
+}
+
+/*NAV BAR */
+header {
+  background-color: white;
+}
+
+.navbar {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 0.5rem;
+}
+
+.navbar .logo {
+  text-align: center;
+}
+
+.navbar .logo h2 {
+  color: #63c572;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 2.813rem;
+}
+
+.navbar ul li {
+  font-weight: bold;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-link {
+  font-size: 1.25rem;
+  display: none;
+}
+
+.navbar-link-toggle {
+  display: none;
+}
+
+.hero-section {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: url("../img/mop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.25;
+}
+
+.hero-section h1 {
+  position: relative;
+  color: white;
+  font-size: 2rem;
+}
+
+.hero-section h1 span {
+  color: #63c572;
+}
+
+.hero-section p {
+  position: relative;
+  margin: 2rem;
+  color: white;
+  font-weight: bold;
+}
+
+.hero-section .btn {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-section .btn a:nth-child(1) {
+  border-radius: 37px;
+  color: white;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  display: inline-block;
+  cursor: pointer;
+  background-color: #63c572;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.hero-section .btn a:nth-child(2) {
+  border-radius: 37px;
+  color: #63c572;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  display: inline-block;
+  cursor: pointer;
+  background-color: white;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+/* ABOUT */
+/* SERVICES */
+/*ADVERTISEMENT*/
+/*FORMS*/
+/*FOOTER*/
+footer {
+  min-height: 5vh;
+  background-color: black;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  width: 80%;
+  margin: auto;
+}
+
+footer p span {
+  color: #63c572;
+}
+
+@media only screen and (max-width: 705px) {
+  .navbar {
+    flex-direction: row;
+  }
+  .navbar .navbar-link {
+    display: block;
+  }
+  .nav-items {
+    display: none;
+  }
+  .navbar-ToggleShow {
+    display: flex;
+  }
+  .navbar-ToggleShow ul {
+    gap: 1.4065rem;
+    text-align: center;
+    flex-direction: column;
+  }
+  .hero-section h1 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .hero-section p {
+    text-align: center;
+  }
+}
