@@ -1,3 +1,6 @@
+
+/* Navigation Functionality */
+
 const classToggle = () => {
     const navs = document.querySelectorAll('.nav-items')
 
@@ -5,3 +8,10 @@ const classToggle = () => {
 }
 
 document.querySelector('.navbar-link-toggle').addEventListener('click', classToggle);
+
+
+/* Live Date */
+ const date = document.getElementById('date');
+
+ date.innerHTML = new Date().getFullYear();
+
