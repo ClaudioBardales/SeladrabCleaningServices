@@ -131,13 +131,23 @@ header {
 .about {
   background-color: #F1F1F1;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .title {
+  text-align: center;
+  font-size: 1.7rem;
+  padding: 1rem;
+  color: #44444a;
 }
 
 .about .container {
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap: 2rem;
   width: 90%;
   margin: auto;
 }
@@ -152,13 +162,13 @@ header {
 
 .card {
   background-color: white;
-  width: 50%;
-  height: 50%;
+  max-width: 400px;
+  max-height: 400px;
 }
 
 .card .content {
-  padding: 10px;
-  font-size: 11.5px;
+  padding: 4.0625rem;
+  font-size: 13.5px;
 }
 
 .card .dot {
@@ -242,7 +252,10 @@ footer p span {
 }
 
 @media only screen and (min-width: 1200px) {
-  .firstgrid {
+  .about {
+    min-height: 70vh;
+  }
+  .about .firstgrid {
     flex-direction: row;
   }
 }
