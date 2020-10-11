@@ -157,6 +157,37 @@ header {
 
 
  /* SERVICES */
+
+.services {
+  min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   .title{
+    text-align: center;
+    font-size: 1.7rem;
+    padding: 1rem;
+    color: $grey;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+   }
+
+   .secondgrid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+   }
+}
+
+
  /*ADVERTISEMENT*/
  .advertise-section{
    min-height: 20vh;
