@@ -211,6 +211,25 @@ header {
   gap: 3rem;
 }
 
+.card2 {
+  background-color: #F1F1F1;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.card2 .content {
+  padding: 4.0625rem;
+  font-size: 13.5px;
+}
+
+.card2 .dot {
+  height: 70px;
+  width: 70px;
+  background-color: #63c572;
+  border-radius: 50%;
+  display: inline-block;
+}
+
 /*ADVERTISEMENT*/
 .advertise-section {
   min-height: 20vh;
@@ -287,6 +306,12 @@ footer p span {
     min-height: 70vh;
   }
   .about .firstgrid {
+    flex-direction: row;
+  }
+  .services {
+    min-height: 70vh;
+  }
+  .services .secondgrid {
     flex-direction: row;
   }
 }

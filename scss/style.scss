@@ -183,7 +183,24 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 3rem;  
+   }
+}
+
+.card2{
+    background-color: $lightgrey;
+    max-width: 400px;
+    max-height: 400px;
+   .content{
+    padding: 4.0625rem;
+    font-size: 13.5px;
+  }
+   .dot{
+     height: 70px;
+     width: 70px;
+     background-color: $leafgreen;
+     border-radius: 50%;
+     display: inline-block;
    }
 }
 
@@ -275,11 +292,17 @@ header {
  }
 
  @media only screen and (min-width: $largedesktops){
-   .about{
+   .about {
      min-height: 70vh;
      .firstgrid{
       flex-direction: row;
     }
-   } 
+   }
+   .services{
+     min-height: 70vh;
+     .secondgrid{
+       flex-direction: row;
+     }
+   }
 
  }
