@@ -131,6 +131,7 @@ header {
      flex-direction: column;
      align-items: center;
      justify-content: center;
+     margin-bottom: 1rem;
      gap: 3rem;
    }
  }
@@ -139,6 +140,8 @@ header {
    background-color: $white;
    max-width: 400px;
    max-height: 400px;
+   @include box-shadow;
+   
    .content{
     padding: 4.0625rem;
     font-size: 13.5px;
@@ -183,6 +186,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 1rem;
     gap: 3rem;  
    }
 }
@@ -191,6 +195,7 @@ header {
     background-color: $lightgrey;
     max-width: 400px;
     max-height: 400px;
+    @include box-shadow;
    .content{
     padding: 4.0625rem;
     font-size: 13.5px;
@@ -236,13 +241,6 @@ header {
      
    }
  }
-
-  
-
-
-
-
-
 
 
 @media only screen and (max-width: $mobile) {

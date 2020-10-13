@@ -3,14 +3,14 @@
 $leafgreen: #63c572;
 $grey: #44444a;
 $white: white;
-$lightgrey: #F1F1F1;
+$lightgrey: #f1f1f1;
 $black: #000000;
 
 // FONT
 
-$primaryFont: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+$primaryFont: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans',
+  'Helvetica Neue', Arial, sans-serif;
 $secondaryFont: Arial, Helvetica, sans-serif;
-
 
 // Media Queries
 
@@ -22,30 +22,34 @@ $largedesktops: 1200px;
 // Buttons
 
 @mixin button1 {
-    border-radius: 37px;
-    color: $white;
-    font-family: $primaryFont;
-    display: inline-block;
-    cursor: pointer;
-    background-color: $leafgreen;
-    font-size: 16px;
-    text-decoration: none;
-    padding: 1rem;
-    font-weight: bold;
+  border-radius: 37px;
+  color: $white;
+  font-family: $primaryFont;
+  display: inline-block;
+  cursor: pointer;
+  background-color: $leafgreen;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 1rem;
+  font-weight: bold;
 }
 
-@mixin button2{
-    border-radius: 37px;
-    color: $leafgreen;
-    font-family: $primaryFont;
-    display: inline-block;
-    cursor: pointer;
-    background-color: $white;
-    font-size: 16px;
-    text-decoration: none;
-    padding: 1rem;
-    font-weight: bold;
+@mixin button2 {
+  border-radius: 37px;
+  color: $leafgreen;
+  font-family: $primaryFont;
+  display: inline-block;
+  cursor: pointer;
+  background-color: $white;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 1rem;
+  font-weight: bold;
 }
 
-
-
+@mixin box-shadow {
+  border-radius: 15px;
+  -webkit-box-shadow: 9px 4px 5px 0px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 9px 4px 5px 0px rgba(0, 0, 0, 0.32);
+  box-shadow: 9px 4px 5px 0px rgba(0, 0, 0, 0.32);
+}
