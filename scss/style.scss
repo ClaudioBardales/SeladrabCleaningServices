@@ -226,16 +226,16 @@ header {
 /* REVIEWS */
 
 .review-section {
-  min-height: 60vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   .title{
     width:90%;
     text-align: center;
     margin: auto;
-    background-color: lightcoral;
+    color: $grey;
     font-size: 1.7rem;
-    padding: 11px;
+    padding: 8px;
   }
   .dot {
     height: 100px;
@@ -246,18 +246,29 @@ header {
   } 
 }
 
+h5{
+  margin: 0.50rem;
+}
+
+
+  .star{
+    color: orange;
+    font-size: 1.5rem;
+  }
+
 .container-review{
   padding: 11px;
   width: 90%;
   margin: auto;
   display:grid;
-  grid-gap: 1rem;
+  grid-gap: 3rem;
   .client-reviews{
+    @include box-shadow;
     display: flex;
     flex-direction: column;
     padding: 1.5rem;
     text-align: center;
-    background-color: lightcyan;
+    background-color: $lightgrey;
   }
 }
 
@@ -383,16 +394,20 @@ footer {
 
 @media only screen and (min-width: $largedesktops) {
   .about {
-    min-height: 70vh;
+    min-height: 60vh;
     .firstgrid {
       flex-direction: row;
     }
   }
   .services {
-    min-height: 70vh;
+    min-height: 60vh;
     .secondgrid {
       flex-direction: row;
     }
+  }
+
+  .review-section{
+    min-height: 60vh;
   }
 
   .container-review{
