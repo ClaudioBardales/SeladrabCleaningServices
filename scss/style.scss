@@ -10,50 +10,40 @@
 
 /*NAV BAR */
 
+
 header {
   background-color: $white;
 }
 
-.navbar {
-  width: 90%;
-  margin: auto;
+.navbar{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row;
-  padding: 0.50rem;
-
-  .logo {
+  .logo{
     text-align: center;
     font-size: 1.5rem;
-    h2 {
+    h2{
       color: $leafgreen;
     }
   }
-
-  ul {
-    display: flex;
+  .toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    // display: none;
+    flex-direction: column;
     justify-content: space-between;
-    flex-direction: row;
-    gap: 2.813rem;
-    li {
-      font-weight: bold;
-      a {
-        text-decoration: none;
-        color: black;
-      }
+    width: 30px;
+    height:21px;
+    .bar{
+      height:3px;
+      width: 100%;
+      color: black;
+      border-radius: 10px;
     }
   }
 }
 
-.navbar-link {
-  font-size: 1.60rem;
-  display: none;
-}
-
-.navbar-link-toggle {
-  display: none;
-}
 
 .hero-section {
   min-height: 100vh;
