@@ -17,42 +17,67 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row;
-  padding: 0.50rem;
 }
 
 .navbar .logo {
   text-align: center;
   font-size: 1.5rem;
+  padding: 0.50rem;
+  display: block;
 }
 
 .navbar .logo h2 {
   color: #63c572;
 }
 
-.navbar ul {
-  display: flex;
+.toggle-button {
+  position: absolute;
+  top: 2.1875rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
   justify-content: space-between;
-  flex-direction: row;
-  gap: 2.813rem;
+  width: 30px;
+  height: 21px;
 }
 
-.navbar ul li {
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+  display: block;
+  padding: 1rem;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
   font-weight: bold;
 }
 
-.navbar ul li a {
-  text-decoration: none;
-  color: black;
+.link:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: all .5s ease;
 }
 
-.navbar-link {
-  font-size: 1.60rem;
-  display: none;
-}
-
-.navbar-link-toggle {
-  display: none;
+.link:hover::after {
+  background: black;
+  width: 100%;
 }
 
 .hero-section {
@@ -361,22 +386,35 @@ footer p span {
 }
 
 @media only screen and (max-width: 852px) {
-  .navbar {
-    flex-direction: row;
-  }
-  .navbar .navbar-link {
-    display: block;
-  }
-  .nav-items {
-    display: none;
-  }
-  .navbar-ToggleShow {
+  .toggle-button {
     display: flex;
   }
-  .navbar-ToggleShow ul {
-    gap: 1.4065rem;
-    text-align: center;
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navbar-links ul {
     flex-direction: column;
+    width: 100%;
+  }
+  .navbar-links ul li {
+    text-align: center;
+  }
+  .navbar-links ul li a {
+    padding: .5rem 1rem;
+  }
+  .link:after {
+    display: none;
+  }
+  .link:hover:after {
+    display: none;
+  }
+  .active {
+    display: flex;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
   }
   .hero-section h1 {
     text-align: center;

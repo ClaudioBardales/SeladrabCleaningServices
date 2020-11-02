@@ -16,33 +16,74 @@ header {
 }
 
 .navbar{
+  width: 90%;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   .logo{
     text-align: center;
     font-size: 1.5rem;
+    padding: 0.50rem;
+    display: block;
     h2{
       color: $leafgreen;
     }
   }
-  .toggle-button{
-    position: absolute;
-    top: .75rem;
-    right: 1rem;
-    // display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height:21px;
-    .bar{
-      height:3px;
-      width: 100%;
-      color: black;
-      border-radius: 10px;
-    }
+}
+
+.toggle-button{
+  position: absolute;
+  top: 2.1875rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  .bar{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
   }
 }
+
+
+
+.navbar-links ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li{
+  list-style: none;
+  display: block;
+  padding: 1rem;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.link:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: all .5s ease;
+}
+.link:hover::after{
+  background: black;
+  width: 100%;
+}
+
+
+
 
 
 .hero-section {
@@ -125,7 +166,6 @@ header {
   @include box-shadow;
   .content {
     padding: 4.0625rem;
-    // font-size: 13.5px;
   }
   .dot {
     height: 100px;
@@ -313,25 +353,46 @@ footer {
 }
 
 @media only screen and (max-width: $mobile) {
-  .navbar {
-    flex-direction: row;
-    .navbar-link {
-      display: block;
-    }
-  }
+ .toggle-button{
+   display: flex;
+ }
 
-  .nav-items {
-    display: none;
-  }
 
-  .navbar-ToggleShow {
-    display: flex;
-    ul {
-      gap: 1.4065rem;
+ .navbar-links{
+  display: none;
+  width: 100%;
+  ul{
+    flex-direction: column;
+    width: 100%;
+    li{
       text-align: center;
-      flex-direction: column;
+      a{
+        padding: .5rem 1rem;
+      }
     }
   }
+ }
+
+ .link:after{
+   display: none;
+ }
+
+ .link:hover:after{
+   display: none;
+ }
+
+ .active{
+   display: flex;
+ }
+ 
+ 
+
+ .navbar{
+   flex-direction: column;
+   align-items: flex-start;
+ }
+
+
 
   .hero-section h1 {
     text-align: center;

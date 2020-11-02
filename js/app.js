@@ -1,14 +1,14 @@
 
 /* Navigation Functionality */
+const toggleButton = document.querySelector('.toggle-button')
+const navbarLinks = document.querySelector('.navbar-links')
+console.log(navbarLinks);
 
-const classToggle = () => {
-    const navs = document.querySelectorAll('.nav-items')
 
-    navs.forEach(nav => nav.classList.toggle('navbar-ToggleShow'));
-}
-
-document.querySelector('.navbar-link-toggle').addEventListener('click', classToggle);
-
+toggleButton.addEventListener('click', () => {
+    console.log(navbarLinks.classList.toggle('active'));
+    
+})
 
 /* Live Date */
  const date = document.getElementById('date');
